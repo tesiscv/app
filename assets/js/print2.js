@@ -251,7 +251,7 @@ export function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, es
     // Aquí debes añadir el código para mostrar los idiomas
     idiomas.forEach(idioma => {
         a.document.write('<div style="margin-top: 1px;">');
-        a.document.write(`<p style="font-family: \'TilpSerif EF Bold Italic\', sans-serif; font-size: 16px; margin-bottom: 2px; color: #444;">${idioma.idioma}</p>`);
+        a.document.write(`<p style="font-family: \'TilpSerif EF Bold Italic\', sans-serif; font-size: 16px; margin-bottom: 2px; color: #444;">${idioma.idioma + ' - '+ idioma.nivel}</p>`);
         a.document.write("</div>");
     });
     a.document.write("</div>");

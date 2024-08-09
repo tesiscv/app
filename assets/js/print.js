@@ -434,7 +434,7 @@ export function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, est
               // =========== Conocimiento ============
               a.document.write('<div style="display: flex; align-items: center; margin-top: 10px;">');
               a.document.write('<div style="font-family: Arial; font-size: 18px; margin-right: 10px;"><label>•</label></div>');
-              a.document.write(`<div style="font-family: Arial; font-size: 18px;"><label>${idioma.idioma}</label></div>`);
+              a.document.write(`<div style="font-family: Arial; font-size: 18px;"><label>${idioma.idioma + ' - '+ idioma.nivel}</label></div>`);
               a.document.write('</div>');
           }
 
@@ -623,7 +623,7 @@ export function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, est
     htmlContent += `
       <div class="list-item">
         <label>•</label>
-        <label>${idioma.idioma}</label>
+        <label>${idioma.idioma + ' - '+ idioma.nivel}</label>
       </div>
     `;
   });
