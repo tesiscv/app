@@ -191,30 +191,51 @@ export function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, est
             // Cierra la columna actual
             a.document.write('</div>');
         }
+        a.document.write('</div>');
+        a.document.write('</div>');
+
+
+
+
+        a.document.write('<div style="display: flex; border-bottom: 1px solid black;">');
+        a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%;">');
+        a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important;">' + languageTexts.skillEt + '</label>');
+        a.document.write('</div>');
+        a.document.write("</div>");
+
+        // Si no hay skills, mostramos solo la columna de conocimientos como está actualmente
+        a.document.write('<div style="display: flex;">');
+
+        const numSkills = skills.length;
+        const numColumnasS = Math.ceil(numSkills / 10); // Calcula el número de columnas necesarias
+
+        for (let i = 0; i < numColumnasS; i++) {
+            // Abre una nueva columna
+            a.document.write('<div style="flex: 1; margin-right: 20px;">');
+
+            // Itera sobre los 8 conocimientos para esta columna o menos si no hay suficientes
+            for (let j = i * 8; j < Math.min((i + 1) * 10, numSkills); j++) {
+                const skill = skills[j];
+                // =========== Conocimiento ============
+                a.document.write('<div style="display: flex; align-items: center; margin-top: 10px;">');
+                a.document.write('<div style="font-family: Arial; font-size: 18px; margin-right: 10px;"><label>•</label></div>');
+                a.document.write(`<div style="font-family: Arial; font-size: 18px;"><label>${skill.skill}</label></div>`);
+                a.document.write('</div>');
+            }
+
+            // Si la columna no tiene 8 conocimientos, añade espacios en blanco
+            const numSkillsEnColumna = Math.min(numSkills - i * 10, 10);
+            for (let k = numSkillsEnColumna; k < 10; k++) {
+                a.document.write('<div style="height: 22px;"></div>'); // Espacio en blanco para completar 8 elementos
+            }
+
+            // Cierra la columna actual
+            a.document.write('</div>');
+        }
+
 
         a.document.write('</div>'); // Cierra el contenedor de la única columna
 
-
-         // Columna de habilidades
-         a.document.write('<div style="display: flex; border-bottom: 1px solid black;">');
-         a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%;">');
-         a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important;">' + languageTexts.skillEt + '</label>');
-         a.document.write('</div>'); // Cerramos la última columna
-         a.document.write("</div>");
-
-    const numSkills = skills.length;
-
-    for (let j = 0; j < numSkills; j++) {
-        const skill = skills[j];
-        // =========== Skill ============
-        a.document.write('<div style="display: flex; align-items: center; margin-top: 10px;">');
-        a.document.write('<div style="font-family: Arial; font-size: 18px; margin-right: 10px;"><label>•</label></div>');
-        a.document.write(`<div style="font-family: Arial; font-size: 18px;"><label>${skill.skill}</label></div>`);
-        a.document.write('</div>');
-    }
-
-    a.document.write('</div>');
-    a.document.write('</div>');
     } else {
       a.document.write('<div style="display: flex; border-bottom: 1px solid black;">');
       a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%;">');
