@@ -842,7 +842,7 @@ function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, estudios,
     // Aquí debes añadir el código para mostrar la experiencia laboral
     experiencias.forEach(experiencia => {
         a.document.write('<div style="margin-top: 15px;">');
-        a.document.write(`<p style="font-family: \'Mediator Serif Narrow Bold\', sans-serif; font-size: 18px; margin-bottom: 5px; color: #444;"><strong>${experiencia.puesto}</strong> - <strong>${experiencia.empresa}</strong></p>`);
+        a.document.write(`<p style="font-family: \'Mediator Serif Narrow Bold\', sans-serif; font-size: 18px; margin-bottom: 5px; color: black;"><strong>${experiencia.puesto}</strong> - <strong>${experiencia.empresa}</strong></p>`);
 
         // =========== Tiempo ============
         // Convertir las fechas a objetos de fecha JavaScript
@@ -870,15 +870,15 @@ function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, estudios,
     // Construir la cadena de tiempo formateada
     const tiempoFormateado = `${mesInicio} ${añoInicio} - ${mesFin} ${añoFin}`;
 
-    a.document.write(`<p style="font-family: 'Tara SC Light', sans-serif; font-size: 16px; margin-bottom: 5px; color: #666;">${tiempoFormateado}</p>`);
+    a.document.write(`<p style="font-family: 'Tara SC Light', sans-serif; font-size: 16px; margin-bottom: 5px; color: black;">${tiempoFormateado}</p>`);
 
-        a.document.write('<div style="font-family: \'Tanseek Traditional Medium\', sans-serif; font-size: 16px; margin-bottom: 10px; color: #666;"><ul style="list-style-type: disc; padding-left: 20px;">'); // Inicio de la lista
+        a.document.write('<div style="font-family: \'Tanseek Traditional Medium\', sans-serif; font-size: 16px; margin-bottom: 10px; color: black;;"><ul style="list-style-type: disc; padding-left: 20px;">'); // Inicio de la lista
         experiencia.actividades.forEach(function(actividad) {
             a.document.write(`<li>${actividad}</li>`); // Mostrar cada actividad como un elemento de lista
         });
         a.document.write('</ul></div>'); // Fin de la lista
 
-        a.document.write('<div style="font-family: \'Tanseek Traditional Medium\', sans-serif; font-size: 16px; margin-bottom: 10px; color: #666;"><ul style="list-style-type: disc; padding-left: 20px;">'); // Inicio de la lista
+        a.document.write('<div style="font-family: \'Tanseek Traditional Medium\', sans-serif; font-size: 16px; margin-bottom: 10px; color: black;;"><ul style="list-style-type: disc; padding-left: 20px;">'); // Inicio de la lista
         experiencia.funciones.forEach(function(funcion) {
             a.document.write(`<li>${funcion}</li>`); // Mostrar cada función como un elemento de lista
         });
@@ -900,8 +900,8 @@ function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, estudios,
 
     estudios.forEach(estudio => {
         a.document.write('<div style="margin-top: 15px;">');
-        a.document.write(`<p style="font-family: \'Mediator Serif Narrow Bold\', sans-serif; font-size: 18px; margin-bottom: 5px; color: #444;"><strong>${estudio.universidad}</strong></strong></p>`);
-        a.document.write(`<p style="font-family: \'TilpSerif EF Bold Italic\', sans-serif; font-size: 16px; margin-bottom: 5px; color: #666;">${estudio.carrera}</p>`);
+        a.document.write(`<p style="font-family: \'Mediator Serif Narrow Bold\', sans-serif; font-size: 18px; margin-bottom: 5px; color: black;"><strong>${estudio.universidad}</strong></strong></p>`);
+        a.document.write(`<p style="font-family: \'TilpSerif EF Bold Italic\', sans-serif; font-size: 16px; margin-bottom: 5px; color: black;">${estudio.carrera}</p>`);
 
         // =========== Tiempo ============
         // Convertir las fechas a objetos de fecha JavaScript
@@ -929,7 +929,7 @@ function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, estudios,
     // Construir la cadena de tiempo formateada
     const tiempoFormateado = `${mesInicio} ${añoInicio} - ${mesFin} ${añoFin}`;
 
-        a.document.write(`<p style="font-family: \'Tara SC Light\', sans-serif; font-size: 16px; margin-bottom: 5px; color: #666;">${tiempoFormateado}</p>`);
+        a.document.write(`<p style="font-family: \'Tara SC Light\', sans-serif; font-size: 16px; margin-bottom: 5px; color: black;">${tiempoFormateado}</p>`);
 
         a.document.write("</div>"); // Cerrar el div del conocimiento
     });
@@ -949,7 +949,7 @@ function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, estudios,
     // Aquí debes añadir el código para mostrar los cursos
     cursos.forEach(curso => {
         a.document.write('<div style="margin-top: 15px;">');
-        a.document.write(`<p style="font-family: \'Mediator Serif Narrow Bold\', sans-serif; font-size: 18px; margin-bottom: 5px; color: #444;"><strong>${curso.nombre}</strong></strong></p>`);
+        a.document.write(`<p style="font-family: \'Mediator Serif Narrow Bold\', sans-serif; font-size: 18px; margin-bottom: 5px; color: black;"><strong>${curso.nombre}</strong></strong></p>`);
          // =========== Tiempo ============
         // Convertir las fechas a objetos de fecha JavaScript
         const fechaInicio = new Date(curso.fechaIni);
@@ -976,11 +976,11 @@ function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, estudios,
         // Construir la cadena de tiempo formateada
         const tiempoFormateado = `${mesInicio} ${añoInicio} - ${mesFin} ${añoFin}`;
 
-        a.document.write(`<p style="font-family: \'TilpSerif EF Bold Italic\', sans-serif; font-size: 16px; margin-bottom: 5px; color: #666;">${curso.organizacion}</p>`);
+        a.document.write(`<p style="font-family: \'TilpSerif EF Bold Italic\', sans-serif; font-size: 16px; margin-bottom: 5px; color: black;">${curso.organizacion}</p>`);
 
-        a.document.write(`<p style="font-family: \'Tara SC Light\', sans-serif; font-size: 16px; margin-bottom: 5px; color: #666;">${tiempoFormateado}</p>`);
-        a.document.write(`<p style="font-family: \'Tanseek Traditional Medium\', sans-serif; font-size: 16px; margin-bottom: 5px; color: #666;">${curso.entidad} - ${curso.tiempoEstudio}</p>`);
-        a.document.write(`<p style="font-family: \'Tanseek Traditional Medium\', sans-serif; font-size: 16px; margin-bottom: 5px; color: #666;">${curso.descripcion}</p>`);
+        a.document.write(`<p style="font-family: \'Tara SC Light\', sans-serif; font-size: 16px; margin-bottom: 5px; color: black;">${tiempoFormateado}</p>`);
+        a.document.write(`<p style="font-family: \'Tanseek Traditional Medium\', sans-serif; font-size: 16px; margin-bottom: 5px; color: black;">${curso.entidad} - ${curso.tiempoEstudio}</p>`);
+        a.document.write(`<p style="font-family: \'Tanseek Traditional Medium\', sans-serif; font-size: 16px; margin-bottom: 5px; color: black;">${curso.descripcion}</p>`);
 
         a.document.write("</div>");
     });
@@ -1005,7 +1005,7 @@ function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, estudios,
     // Aquí debes añadir el código para mostrar los conocimientos
     conocimientos.forEach(conocimiento => {
         a.document.write('<div style="margin-top: 0.5%; margin-bottom: 0.5%;">'); // Ajusta los márgenes superior e inferior
-        a.document.write(`<p style="font-family: 'TilpSerif EF Bold Italic', sans-serif; font-size: 16px; margin: 0; color: #444;">${conocimiento.conocimiento}</p>`); // Elimina margen inferior y superior
+        a.document.write(`<p style="font-family: 'TilpSerif EF Bold Italic', sans-serif; font-size: 16px; margin: 0; color: black;">${conocimiento.conocimiento}</p>`); // Elimina margen inferior y superior
         a.document.write("</div>");
     });
     a.document.write("</div>");
@@ -1023,7 +1023,7 @@ function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, estudios,
       // Aquí debes añadir el código para mostrar los conocimientos
       skills.forEach(skills => {
           a.document.write('<div style="margin-top: 0.5%; margin-bottom: 0.5%;">'); // Ajusta los márgenes superior e inferior
-          a.document.write(`<p style="font-family: 'TilpSerif EF Bold Italic', sans-serif; font-size: 16px; margin: 0; color: #444;">${skills.skill}</p>`); // Elimina margen inferior y superior
+          a.document.write(`<p style="font-family: 'TilpSerif EF Bold Italic', sans-serif; font-size: 16px; margin: 0; color: black;">${skills.skill}</p>`); // Elimina margen inferior y superior
           a.document.write("</div>");
       });
       a.document.write("</div>");
@@ -1041,7 +1041,7 @@ function printDiv2(nombre, apellido, nacionalidad, edad, ciudad, pais, estudios,
     // Aquí debes añadir el código para mostrar los idiomas
     idiomas.forEach(idioma => {
         a.document.write('<div style="margin-top: 1px;">');
-        a.document.write(`<p style="font-family: \'TilpSerif EF Bold Italic\', sans-serif; font-size: 16px; margin-bottom: 2px; color: #444;">${idioma.idioma}</p>`);
+        a.document.write(`<p style="font-family: \'TilpSerif EF Bold Italic\', sans-serif; font-size: 16px; margin-bottom: 2px; color: black;">${idioma.idioma + ' - '+ idioma.nivel}</p>`);
         a.document.write("</div>");
     });
     a.document.write("</div>");
@@ -2091,9 +2091,9 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
     a.document.write("</div>");
 
     //SEPARAMIENTO DEL PDF
-    a.document.write(
-      '<div style="display: inline-block; align-items: center; width:100%;">'
-    );
+    // a.document.write(
+    //   '<div style="display: inline-block; align-items: center; width:100%;">'
+    // );
 
 
     // =========== 1. DATOS PERSONALES ============
@@ -2102,7 +2102,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
     );
     a.document.write('<div style="display: flex; ">');
     a.document.write(
-      '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%; ">'+ languageTexts.datospersonales +'</label>'
+      '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important;">'+ languageTexts.datospersonales +'</label>'
     );
     a.document.write("</div>");
     a.document.write("</div>");
@@ -2133,7 +2133,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
     );
     a.document.write('<div style="display: flex; margin-top:3%;">');
     a.document.write(
-      '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%; ">' + languageTexts.estudioscursados + '</label>'
+      '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important; ">' + languageTexts.estudioscursados + '</label>'
     );
     a.document.write("</div>");
     a.document.write("</div>");
@@ -2187,7 +2187,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
     // Columna de conocimientos
     a.document.write('<div style="flex: 1; margin-right: 20px;">');
     a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%; border-bottom: 1px solid black;">');
-    a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;">' + languageTexts.conocimientotec + '</label>');
+    a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important;">' + languageTexts.conocimientotec + '</label>');
     a.document.write('</div>');
 
     const numConocimientos = conocimientos.length;
@@ -2206,7 +2206,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
     // Columna de habilidades
     a.document.write('<div style="flex: 1; margin-left: 20px;">');
     a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%; border-bottom: 1px solid black;">');
-    a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;">' + languageTexts.skillEt + '</label>');
+    a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important;">' + languageTexts.skillEt + '</label>');
     a.document.write('</div>');
 
     const numSkills = skills.length;
@@ -2225,7 +2225,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
     } else if (conocimientos.length > 13 && skills.length > 0) {
       a.document.write('<div style="display: flex; border-bottom: 1px solid black;">');
       a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%;">');
-      a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;">' + languageTexts.conocimientotec + '</label>');
+      a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important;">' + languageTexts.conocimientotec + '</label>');
       a.document.write('</div>'); // Cerramos la última columna
       a.document.write("</div>");
         // Si no hay skills, mostramos solo la columna de conocimientos como está actualmente
@@ -2257,34 +2257,55 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
             // Cierra la columna actual
             a.document.write('</div>');
         }
+        a.document.write('</div>');
+        a.document.write('</div>');
+
+
+
+
+        a.document.write('<div style="display: flex; border-bottom: 1px solid black;">');
+        a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%;">');
+        a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important;">' + languageTexts.skillEt + '</label>');
+        a.document.write('</div>');
+        a.document.write("</div>");
+
+        // Si no hay skills, mostramos solo la columna de conocimientos como está actualmente
+        a.document.write('<div style="display: flex;">');
+
+        const numSkills = skills.length;
+        const numColumnasS = Math.ceil(numSkills / 10); // Calcula el número de columnas necesarias
+
+        for (let i = 0; i < numColumnasS; i++) {
+            // Abre una nueva columna
+            a.document.write('<div style="flex: 1; margin-right: 20px;">');
+
+            // Itera sobre los 8 conocimientos para esta columna o menos si no hay suficientes
+            for (let j = i * 8; j < Math.min((i + 1) * 10, numSkills); j++) {
+                const skill = skills[j];
+                // =========== Conocimiento ============
+                a.document.write('<div style="display: flex; align-items: center; margin-top: 10px;">');
+                a.document.write('<div style="font-family: Arial; font-size: 18px; margin-right: 10px;"><label>•</label></div>');
+                a.document.write(`<div style="font-family: Arial; font-size: 18px;"><label>${skill.skill}</label></div>`);
+                a.document.write('</div>');
+            }
+
+            // Si la columna no tiene 8 conocimientos, añade espacios en blanco
+            const numSkillsEnColumna = Math.min(numSkills - i * 10, 10);
+            for (let k = numSkillsEnColumna; k < 10; k++) {
+                a.document.write('<div style="height: 22px;"></div>'); // Espacio en blanco para completar 8 elementos
+            }
+
+            // Cierra la columna actual
+            a.document.write('</div>');
+        }
+
 
         a.document.write('</div>'); // Cierra el contenedor de la única columna
 
-
-         // Columna de habilidades
-         a.document.write('<div style="display: flex; border-bottom: 1px solid black;">');
-         a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%;">');
-         a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;">' + languageTexts.skillEt + '</label>');
-         a.document.write('</div>'); // Cerramos la última columna
-         a.document.write("</div>");
-
-    const numSkills = skills.length;
-
-    for (let j = 0; j < numSkills; j++) {
-        const skill = skills[j];
-        // =========== Skill ============
-        a.document.write('<div style="display: flex; align-items: center; margin-top: 10px;">');
-        a.document.write('<div style="font-family: Arial; font-size: 18px; margin-right: 10px;"><label>•</label></div>');
-        a.document.write(`<div style="font-family: Arial; font-size: 18px;"><label>${skill.skill}</label></div>`);
-        a.document.write('</div>');
-    }
-
-    a.document.write('</div>');
-    a.document.write('</div>');
     } else {
       a.document.write('<div style="display: flex; border-bottom: 1px solid black;">');
       a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%;">');
-      a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;">' + languageTexts.conocimientotec + '</label>');
+      a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important;">' + languageTexts.conocimientotec + '</label>');
       a.document.write('</div>'); // Cerramos la última columna
       a.document.write("</div>");
         // Si no hay skills, mostramos solo la columna de conocimientos como está actualmente
@@ -2327,7 +2348,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
     );
     a.document.write('<div style="display: flex; margin-top:3%;">');
     a.document.write(
-      '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%; ">'+languageTexts.experiencialab+'</label>'
+      '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important; ">'+languageTexts.experiencialab+'</label>'
     );
     a.document.write("</div>");
     a.document.write("</div>");
@@ -2382,7 +2403,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
 
 
       // =========== Logros ============
-      a.document.write('<div style="font-weight: bold; font-family: \'Arial\'; font-size: 18px; margin-bottom: 5px; margin-top: 10px;"><label>'+languageTexts.logroet+':</label></div>');
+      a.document.write('<div style="font-weight: bold; font-family: \'Arial\'; font-size: 18px; margin-bottom: 5px; margin-top: 10px;  color: #3D5FEA !important;"><label>'+languageTexts.logroet+':</label></div>');
       a.document.write('<div style="font-family: \'Arial\'; font-size: 18px; margin-bottom: 10px;">');
       a.document.write('<ul>'); // Inicio de la lista
       experiencia.actividades.forEach(function(actividad) {
@@ -2393,7 +2414,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
 
 
        // =========== Funciones ============
-       a.document.write('<div style="font-weight: bold; font-family: \'Arial\'; font-size: 18px; margin-bottom: 5px; margin-top: 10px;"><label>'+languageTexts.funcionet+':</label></div>');
+       a.document.write('<div style="font-weight: bold; font-family: \'Arial\'; font-size: 18px; margin-bottom: 5px; margin-top: 10px;  color: #3D5FEA !important;"><label>'+languageTexts.funcionet+':</label></div>');
        a.document.write('<div style="font-family: \'Arial\'; font-size: 18px; margin-bottom: 10px;">');
        a.document.write('<ul>'); // Inicio de la lista
        experiencia.funciones.forEach(function(funcion) {
@@ -2414,7 +2435,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
       );
       a.document.write('<div style="display: flex; margin-top:3%;">');
       a.document.write(
-          '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%; ">'+languageTexts.otrosEstudios+'</label>'
+          '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important; ">'+languageTexts.otrosEstudios+'</label>'
       );
       a.document.write("</div>");
       a.document.write("</div>");
@@ -2481,7 +2502,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
     // =========== IDIOMAS ============
     a.document.write('<div style="display: flex; border-bottom: 1px solid black;">');
     a.document.write('<div style="display: flex; flex-direction: column; margin-top:3%;">');
-    a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%; ">'+languageTexts.idiomas+'</label>');
+    a.document.write('<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important; ">'+languageTexts.idiomas+'</label>');
     a.document.write('</div>'); // Cerramos la última columna
     a.document.write("</div>");
 
@@ -2500,7 +2521,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
               // =========== Conocimiento ============
               a.document.write('<div style="display: flex; align-items: center; margin-top: 10px;">');
               a.document.write('<div style="font-family: Arial; font-size: 18px; margin-right: 10px;"><label>•</label></div>');
-              a.document.write(`<div style="font-family: Arial; font-size: 18px;"><label>${idioma.idioma}</label></div>`);
+              a.document.write(`<div style="font-family: Arial; font-size: 18px;"><label>${idioma.idioma + ' - '+ idioma.nivel}</label></div>`);
               a.document.write('</div>');
           }
 
@@ -2523,7 +2544,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
         );
         a.document.write('<div style="display: flex; margin-top:3%;">');
         a.document.write(
-          '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%; ">'+languageTexts.comentariotTitulo+'</label>'
+          '<label style="font-weight: bold; font-family: \'Franklin Gothic Medium Cond\'; font-size: 20px; margin-top: 2%;  color: #3D5FEA !important;">'+languageTexts.comentariotTitulo+'</label>'
         );
         a.document.write("</div>");
         a.document.write("</div>");
@@ -2689,7 +2710,7 @@ function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, estudios, 
     htmlContent += `
       <div class="list-item">
         <label>•</label>
-        <label>${idioma.idioma}</label>
+        <label>${idioma.idioma + ' - '+ idioma.nivel}</label>
       </div>
     `;
   });
@@ -2722,12 +2743,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormularioComponent", function() { return FormularioComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _personal_personal_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../personal/personal.component */ "m2WJ");
-/* harmony import */ var _skills_skills_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../skills/skills.component */ "fGbd");
-/* harmony import */ var _conocimiento_total_conocimiento_total_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../conocimiento-total/conocimiento-total.component */ "DNzp");
-/* harmony import */ var _estudios_estudios_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../estudios/estudios.component */ "Co0O");
-/* harmony import */ var _experiencia_experiencia_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../experiencia/experiencia.component */ "+/Dj");
-/* harmony import */ var _cursos_cursos_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../cursos/cursos.component */ "wxiI");
-/* harmony import */ var _idiomas_idiomas_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../idiomas/idiomas.component */ "OPXo");
+/* harmony import */ var _idiomas_idiomas_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../idiomas/idiomas.component */ "OPXo");
+/* harmony import */ var _skills_skills_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../skills/skills.component */ "fGbd");
+/* harmony import */ var _conocimiento_total_conocimiento_total_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../conocimiento-total/conocimiento-total.component */ "DNzp");
+/* harmony import */ var _estudios_estudios_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../estudios/estudios.component */ "Co0O");
+/* harmony import */ var _experiencia_experiencia_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../experiencia/experiencia.component */ "+/Dj");
+/* harmony import */ var _cursos_cursos_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../cursos/cursos.component */ "wxiI");
 /* harmony import */ var _comentarios_comentarios_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../comentarios/comentarios.component */ "+kO/");
 
 
@@ -2749,27 +2770,27 @@ FormularioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-personal");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "app-skills");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "app-idiomas");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "app-conocimiento-total");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "app-skills");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "app-estudios");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "app-conocimiento-total");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "app-experiencia");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "app-estudios");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "app-cursos");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "app-experiencia");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "app-idiomas");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "app-cursos");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "app-comentarios");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_personal_personal_component__WEBPACK_IMPORTED_MODULE_1__["PersonalComponent"], _skills_skills_component__WEBPACK_IMPORTED_MODULE_2__["SkillsComponent"], _conocimiento_total_conocimiento_total_component__WEBPACK_IMPORTED_MODULE_3__["ConocimientoTotalComponent"], _estudios_estudios_component__WEBPACK_IMPORTED_MODULE_4__["EstudiosComponent"], _experiencia_experiencia_component__WEBPACK_IMPORTED_MODULE_5__["ExperienciaComponent"], _cursos_cursos_component__WEBPACK_IMPORTED_MODULE_6__["CursosComponent"], _idiomas_idiomas_component__WEBPACK_IMPORTED_MODULE_7__["IdiomasComponent"], _comentarios_comentarios_component__WEBPACK_IMPORTED_MODULE_8__["ComentariosComponent"]], styles: [".formulario-container[_ngcontent-%COMP%] {\n  border: 1px solid #ccc;\n  \n  padding: 20px;\n  \n  margin-bottom: 20px;\n  \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXGZvcm11bGFyaW8uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxzQkFBQTtFQUF3QixvQkFBQTtFQUN4QixhQUFBO0VBQWUsOENBQUE7RUFDZixtQkFBQTtFQUFxQix3Q0FBQTtBQUl6QiIsImZpbGUiOiJmb3JtdWxhcmlvLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm11bGFyaW8tY29udGFpbmVyIHtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7IC8qIEFncmVnYSB1biBib3JkZSAqL1xyXG4gICAgcGFkZGluZzogMjBweDsgLyogQWdyZWdhIHVuIGVzcGFjaW8gYWxyZWRlZG9yIGRlbCBjb250ZW5pZG8gKi9cclxuICAgIG1hcmdpbi1ib3R0b206IDIwcHg7IC8qIEFncmVnYSBlc3BhY2lvIGVuIGxhIHBhcnRlIGluZmVyaW9yICovXHJcbn1cclxuIl19 */"] });
+    } }, directives: [_personal_personal_component__WEBPACK_IMPORTED_MODULE_1__["PersonalComponent"], _idiomas_idiomas_component__WEBPACK_IMPORTED_MODULE_2__["IdiomasComponent"], _skills_skills_component__WEBPACK_IMPORTED_MODULE_3__["SkillsComponent"], _conocimiento_total_conocimiento_total_component__WEBPACK_IMPORTED_MODULE_4__["ConocimientoTotalComponent"], _estudios_estudios_component__WEBPACK_IMPORTED_MODULE_5__["EstudiosComponent"], _experiencia_experiencia_component__WEBPACK_IMPORTED_MODULE_6__["ExperienciaComponent"], _cursos_cursos_component__WEBPACK_IMPORTED_MODULE_7__["CursosComponent"], _comentarios_comentarios_component__WEBPACK_IMPORTED_MODULE_8__["ComentariosComponent"]], styles: [".formulario-container[_ngcontent-%COMP%] {\n  border: 1px solid #ccc;\n  \n  padding: 20px;\n  \n  margin-bottom: 20px;\n  \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXGZvcm11bGFyaW8uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxzQkFBQTtFQUF3QixvQkFBQTtFQUN4QixhQUFBO0VBQWUsOENBQUE7RUFDZixtQkFBQTtFQUFxQix3Q0FBQTtBQUl6QiIsImZpbGUiOiJmb3JtdWxhcmlvLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm11bGFyaW8tY29udGFpbmVyIHtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7IC8qIEFncmVnYSB1biBib3JkZSAqL1xyXG4gICAgcGFkZGluZzogMjBweDsgLyogQWdyZWdhIHVuIGVzcGFjaW8gYWxyZWRlZG9yIGRlbCBjb250ZW5pZG8gKi9cclxuICAgIG1hcmdpbi1ib3R0b206IDIwcHg7IC8qIEFncmVnYSBlc3BhY2lvIGVuIGxhIHBhcnRlIGluZmVyaW9yICovXHJcbn1cclxuIl19 */"] });
 
 
 /***/ }),
@@ -2794,8 +2815,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/form-field */ "kmnG");
 /* harmony import */ var _angular_material_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/input */ "qFsG");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/button */ "bTqV");
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/icon */ "NFeN");
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/select */ "d3UM");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/button */ "bTqV");
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/core */ "FKr1");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/icon */ "NFeN");
+
+
 
 
 
@@ -2817,49 +2842,86 @@ function IdiomasComponent_mat_error_12_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r2.languageTexts.obligatorio, " ");
 } }
-function IdiomasComponent_th_18_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "th", 19);
+function IdiomasComponent_mat_option_19_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-option", 23);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    const option_r14 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("value", option_r14.value);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r3.languageTexts.idioma, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", option_r14.viewValue, " ");
 } }
-function IdiomasComponent_td_19_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "td", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const element_r9 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", element_r9.idioma, " ");
-} }
-function IdiomasComponent_th_21_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "th", 19);
+function IdiomasComponent_mat_error_20_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "mat-error");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r5.languageTexts.eliminar, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r5.languageTexts.obligatorio, " ");
 } }
-function IdiomasComponent_td_22_Template(rf, ctx) { if (rf & 1) {
-    const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "td", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function IdiomasComponent_td_22_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r12); const element_r10 = ctx.$implicit; const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r11.eliminarElemento(element_r10); });
+function IdiomasComponent_th_26_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "th", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r6.languageTexts.idioma, " ");
+} }
+function IdiomasComponent_td_27_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "td", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const element_r15 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", element_r15.idioma, " ");
+} }
+function IdiomasComponent_th_29_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "th", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r8.languageTexts.nivel, " ");
+} }
+function IdiomasComponent_td_30_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "td", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const element_r16 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", element_r16.nivel, " ");
+} }
+function IdiomasComponent_th_32_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "th", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", ctx_r10.languageTexts.eliminar, " ");
+} }
+function IdiomasComponent_td_33_Template(rf, ctx) { if (rf & 1) {
+    const _r19 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "td", 25);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "button", 26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function IdiomasComponent_td_33_Template_button_click_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r19); const element_r17 = ctx.$implicit; const ctx_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r18.eliminarElemento(element_r17); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "mat-icon");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3, "delete");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } }
-function IdiomasComponent_tr_23_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "tr", 22);
+function IdiomasComponent_tr_34_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "tr", 27);
 } }
-function IdiomasComponent_tr_24_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "tr", 23);
+function IdiomasComponent_tr_35_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "tr", 28);
 } }
 class IdiomasComponent {
     constructor(dataFormularioService, languageService) {
@@ -2867,21 +2929,29 @@ class IdiomasComponent {
         this.languageService = languageService;
         this.dataSource = new _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatTableDataSource"]([]);
         this.idioma = '';
+        this.nivel = '';
         this.selectedLanguage = 'es';
-        this.displayedColumns = ['idioma', 'eliminar'];
+        this.displayedColumns = ['idioma', 'nivel', 'eliminar'];
         this.selectedLanguage = this.languageService.language; // Establece el idioma predeterminado
         this.languageSubscription = this.languageService.languageTexts$.subscribe(languageTexts => {
             this.languageTexts = languageTexts;
+            this.nivelOptions = [
+                { value: languageTexts.basico, viewValue: languageTexts.basico },
+                { value: languageTexts.intermedio, viewValue: languageTexts.intermedio },
+                { value: languageTexts.avanzado, viewValue: languageTexts.avanzado }
+            ];
         });
     }
     ngOnInit() {
-        console.log('displayedColumns:', this.displayedColumns);
-        console.log('dataSource.data:', this.dataSource.data);
+    }
+    ngOnDestroy() {
+        this.languageSubscription.unsubscribe(); // Unsubscribe to avoid memory leaks
     }
     guardarIdioma(form) {
         if (form.valid) {
             const nuevoIdioma = {
-                idioma: this.idioma
+                idioma: this.idioma,
+                nivel: this.nivel
             };
             console.log('Nuevo elemento a agregar:', nuevoIdioma);
             this.dataSource.data.push(nuevoIdioma);
@@ -2899,6 +2969,7 @@ class IdiomasComponent {
     }
     resetFormulario(form) {
         this.idioma = '';
+        this.nivel = '';
         form.resetForm();
     }
     eliminarElemento(elemento) {
@@ -2907,14 +2978,14 @@ class IdiomasComponent {
     }
 }
 IdiomasComponent.ɵfac = function IdiomasComponent_Factory(t) { return new (t || IdiomasComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_data_formulario_service__WEBPACK_IMPORTED_MODULE_3__["DataFormularioService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_language_service__WEBPACK_IMPORTED_MODULE_4__["LanguageService"])); };
-IdiomasComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: IdiomasComponent, selectors: [["app-idiomas"]], decls: 25, vars: 8, consts: [[1, "formulario-container"], [1, "titulo"], [1, "formulario", 3, "ngSubmit"], ["idiomaForm", "ngForm"], [1, "fila"], [1, "columna"], [1, "campo"], ["matInput", "", "name", "idioma", "required", "", 3, "placeholder", "ngModel", "ngModelChange"], ["idiomaModel", "ngModel"], [4, "ngIf"], ["mat-raised-button", "", "color", "primary", "type", "submit", 1, "boton"], [1, "example-container", "mat-elevation-z8"], ["mat-table", "", 3, "dataSource"], ["matColumnDef", "idioma"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "eliminar"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], ["mat-header-cell", ""], ["mat-cell", ""], ["mat-icon-button", "", "color", "warn", 3, "click"], ["mat-header-row", ""], ["mat-row", ""]], template: function IdiomasComponent_Template(rf, ctx) { if (rf & 1) {
-        const _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+IdiomasComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: IdiomasComponent, selectors: [["app-idiomas"]], decls: 36, vars: 12, consts: [[1, "formulario-container"], [1, "titulo"], [1, "formulario", 3, "ngSubmit"], ["idiomaForm", "ngForm"], [1, "fila"], [1, "columna"], [1, "campo"], ["matInput", "", "name", "idioma", "required", "", 3, "placeholder", "ngModel", "ngModelChange"], ["idiomaModel", "ngModel"], [4, "ngIf"], ["name", "nivel", "required", "", 3, "ngModel", "ngModelChange"], ["nivelModel", "ngModel"], [3, "value", 4, "ngFor", "ngForOf"], ["mat-raised-button", "", "color", "primary", "type", "submit", 1, "boton"], [1, "example-container", "mat-elevation-z8"], ["mat-table", "", 3, "dataSource"], ["matColumnDef", "idioma"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "nivel"], ["matColumnDef", "eliminar"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], [3, "value"], ["mat-header-cell", ""], ["mat-cell", ""], ["mat-icon-button", "", "color", "warn", 3, "click"], ["mat-header-row", ""], ["mat-row", ""]], template: function IdiomasComponent_Template(rf, ctx) { if (rf & 1) {
+        const _r21 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "h2", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2, "IDIOMAS / LANGUAGES");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "form", 2, 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngSubmit", function IdiomasComponent_Template_form_ngSubmit_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r14); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](4); return ctx.guardarIdioma(_r0); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngSubmit", function IdiomasComponent_Template_form_ngSubmit_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r21); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](4); return ctx.guardarIdioma(_r0); });
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](5, "div", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](6, "div", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "mat-form-field", 6);
@@ -2927,28 +2998,45 @@ IdiomasComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](12, IdiomasComponent_mat_error_12_Template, 2, 1, "mat-error", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](13, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](14, "mat-form-field", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](15, "mat-label");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](16);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](13, "button", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](17, "mat-select", 10, 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function IdiomasComponent_Template_mat_select_ngModelChange_17_listener($event) { return ctx.nivel = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](19, IdiomasComponent_mat_option_19_Template, 2, 2, "mat-option", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](20, IdiomasComponent_mat_error_20_Template, 2, 1, "mat-error", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](15, "div", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](16, "table", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](17, 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](18, IdiomasComponent_th_18_Template, 2, 1, "th", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](19, IdiomasComponent_td_19_Template, 2, 1, "td", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](21, "button", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](23, "div", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](24, "table", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](25, 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](26, IdiomasComponent_th_26_Template, 2, 1, "th", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](27, IdiomasComponent_td_27_Template, 2, 1, "td", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](20, 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](21, IdiomasComponent_th_21_Template, 2, 1, "th", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](22, IdiomasComponent_td_22_Template, 4, 0, "td", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](28, 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](29, IdiomasComponent_th_29_Template, 2, 1, "th", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](30, IdiomasComponent_td_30_Template, 2, 1, "td", 18);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](23, IdiomasComponent_tr_23_Template, 1, 0, "tr", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](24, IdiomasComponent_tr_24_Template, 1, 0, "tr", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](31, 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](32, IdiomasComponent_th_32_Template, 2, 1, "th", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](33, IdiomasComponent_td_33_Template, 4, 0, "td", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](34, IdiomasComponent_tr_34_Template, 1, 0, "tr", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](35, IdiomasComponent_tr_35_Template, 1, 0, "tr", 22);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     } if (rf & 2) {
         const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](11);
+        const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](18);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx.languageTexts.selectidioma);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
@@ -2956,15 +3044,23 @@ IdiomasComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngModel", ctx.idioma);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", _r1.invalid && (_r1.dirty || _r1.touched));
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx.languageTexts.selectnivel);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngModel", ctx.nivel);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.nivelOptions);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", _r3.invalid && (_r3.dirty || _r3.touched));
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx.languageTexts.guardarIdioma);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("dataSource", ctx.dataSource);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](10);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("matHeaderRowDef", ctx.displayedColumns);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("matRowDefColumns", ctx.displayedColumns);
-    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["ɵangular_packages_forms_forms_ba"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgForm"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_9__["MatButton"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatTable"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatColumnDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatRowDef"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatError"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatCell"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_10__["MatIcon"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderRow"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatRow"]], styles: [".formulario-container[_ngcontent-%COMP%] {\n  width: 100%;\n  padding: 20px;\n  box-sizing: border-box;\n  background-color: #f5f5f5;\n  border-radius: 10px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\n\n.titulo[_ngcontent-%COMP%] {\n  text-align: center;\n  margin-bottom: 20px;\n}\n\n.example-container[_ngcontent-%COMP%] {\n  height: 400px;\n  overflow: auto;\n}\n\ntable[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\n.fila[_ngcontent-%COMP%] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n}\n\n.columna[_ngcontent-%COMP%] {\n  flex-basis: calc(50% - 10px);\n  margin-bottom: 20px;\n}\n\n.campo[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\n\n\nbutton[_ngcontent-%COMP%] {\n  background-color: #33CEFF !important;\n  \n  color: black !important;\n  \n}\n\n.example-container[_ngcontent-%COMP%] {\n  margin-top: 20px;\n  height: 400px;\n  overflow: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXGlkaW9tYXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxXQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0EseUJBQUE7RUFDQSxtQkFBQTtFQUNBLHVDQUFBO0FBQUY7O0FBR0E7RUFDRSxrQkFBQTtFQUNBLG1CQUFBO0FBQUY7O0FBR0E7RUFDSSxhQUFBO0VBQ0EsY0FBQTtBQUFKOztBQUdFO0VBQ0UsV0FBQTtBQUFKOztBQUdFO0VBQ0UsYUFBQTtFQUNBLGVBQUE7RUFDQSw4QkFBQTtBQUFKOztBQUdFO0VBQ0UsNEJBQUE7RUFDQSxtQkFBQTtBQUFKOztBQUdFO0VBQ0UsV0FBQTtBQUFKOztBQUdFLDZCQUFBOztBQUNGO0VBQ0Usb0NBQUE7RUFBc0MsNkJBQUE7RUFDdEMsdUJBQUE7RUFBeUIsc0NBQUE7QUFFM0I7O0FBRUU7RUFDRSxnQkFBQTtFQUNBLGFBQUE7RUFDQSxjQUFBO0FBQ0oiLCJmaWxlIjoiaWRpb21hcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4uZm9ybXVsYXJpby1jb250YWluZXIge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIHBhZGRpbmc6IDIwcHg7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjVmNWY1O1xyXG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbiAgYm94LXNoYWRvdzogMCAwIDEwcHggcmdiYSgwLCAwLCAwLCAwLjEpO1xyXG59XHJcblxyXG4udGl0dWxvIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxufVxyXG5cclxuLmV4YW1wbGUtY29udGFpbmVyIHtcclxuICAgIGhlaWdodDogNDAwcHg7XHJcbiAgICBvdmVyZmxvdzogYXV0bztcclxuICB9XHJcbiAgXHJcbiAgdGFibGUge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG4gIC5maWxhIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LXdyYXA6IHdyYXA7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgfVxyXG4gIFxyXG4gIC5jb2x1bW5hIHtcclxuICAgIGZsZXgtYmFzaXM6IGNhbGMoNTAlIC0gMTBweCk7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG4gIH1cclxuXHJcbiAgLmNhbXBvIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuXHJcbiAgLyogc3R5bGVzLmNzcyBvIHN0eWxlcy5zY3NzICovXHJcbmJ1dHRvbiB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzMzQ0VGRiAhaW1wb3J0YW50OyAvKiBDYW1iaWEgZWwgY29sb3IgZGUgZm9uZG8gKi9cclxuICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDsgLyogQ2FtYmlhIGVsIGNvbG9yIGRlbCB0ZXh0byBhIG5lZ3JvICovXHJcbn1cclxuXHJcblxyXG4gIC5leGFtcGxlLWNvbnRhaW5lciB7XHJcbiAgICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gICAgaGVpZ2h0OiA0MDBweDtcclxuICAgIG92ZXJmbG93OiBhdXRvO1xyXG4gIH0iXX0= */"] });
+    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["ɵangular_packages_forms_forms_ba"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgForm"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["RequiredValidator"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_material_select__WEBPACK_IMPORTED_MODULE_9__["MatSelect"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgForOf"], _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButton"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatTable"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatColumnDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatCellDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderRowDef"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatRowDef"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatError"], _angular_material_core__WEBPACK_IMPORTED_MODULE_11__["MatOption"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderCell"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatCell"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_12__["MatIcon"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatHeaderRow"], _angular_material_table__WEBPACK_IMPORTED_MODULE_0__["MatRow"]], styles: [".formulario-container[_ngcontent-%COMP%] {\n  width: 100%;\n  padding: 20px;\n  box-sizing: border-box;\n  background-color: #f5f5f5;\n  border-radius: 10px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n}\n\n.titulo[_ngcontent-%COMP%] {\n  text-align: center;\n  margin-bottom: 20px;\n}\n\n.example-container[_ngcontent-%COMP%] {\n  height: 400px;\n  overflow: auto;\n}\n\ntable[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\n.fila[_ngcontent-%COMP%] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-between;\n}\n\n.columna[_ngcontent-%COMP%] {\n  flex-basis: calc(50% - 10px);\n  margin-bottom: 20px;\n}\n\n.campo[_ngcontent-%COMP%] {\n  width: 100%;\n}\n\n\n\nbutton[_ngcontent-%COMP%] {\n  background-color: #33CEFF !important;\n  \n  color: black !important;\n  \n}\n\n.example-container[_ngcontent-%COMP%] {\n  margin-top: 20px;\n  height: 400px;\n  overflow: auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXGlkaW9tYXMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxXQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0EseUJBQUE7RUFDQSxtQkFBQTtFQUNBLHVDQUFBO0FBQUY7O0FBR0E7RUFDRSxrQkFBQTtFQUNBLG1CQUFBO0FBQUY7O0FBR0E7RUFDSSxhQUFBO0VBQ0EsY0FBQTtBQUFKOztBQUdFO0VBQ0UsV0FBQTtBQUFKOztBQUdFO0VBQ0UsYUFBQTtFQUNBLGVBQUE7RUFDQSw4QkFBQTtBQUFKOztBQUdFO0VBQ0UsNEJBQUE7RUFDQSxtQkFBQTtBQUFKOztBQUdFO0VBQ0UsV0FBQTtBQUFKOztBQUdFLDZCQUFBOztBQUNGO0VBQ0Usb0NBQUE7RUFBc0MsNkJBQUE7RUFDdEMsdUJBQUE7RUFBeUIsc0NBQUE7QUFFM0I7O0FBRUU7RUFDRSxnQkFBQTtFQUNBLGFBQUE7RUFDQSxjQUFBO0FBQ0oiLCJmaWxlIjoiaWRpb21hcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4uZm9ybXVsYXJpby1jb250YWluZXIge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIHBhZGRpbmc6IDIwcHg7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjVmNWY1O1xyXG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbiAgYm94LXNoYWRvdzogMCAwIDEwcHggcmdiYSgwLCAwLCAwLCAwLjEpO1xyXG59XHJcblxyXG4udGl0dWxvIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxufVxyXG5cclxuLmV4YW1wbGUtY29udGFpbmVyIHtcclxuICAgIGhlaWdodDogNDAwcHg7XHJcbiAgICBvdmVyZmxvdzogYXV0bztcclxuICB9XHJcbiAgXHJcbiAgdGFibGUge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG4gIC5maWxhIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LXdyYXA6IHdyYXA7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgfVxyXG4gIFxyXG4gIC5jb2x1bW5hIHtcclxuICAgIGZsZXgtYmFzaXM6IGNhbGMoNTAlIC0gMTBweCk7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG4gIH1cclxuXHJcbiAgLmNhbXBvIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gIH1cclxuXHJcbiAgLyogc3R5bGVzLmNzcyBvIHN0eWxlcy5zY3NzICovXHJcbmJ1dHRvbiB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzMzQ0VGRiAhaW1wb3J0YW50OyAvKiBDYW1iaWEgZWwgY29sb3IgZGUgZm9uZG8gKi9cclxuICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDsgLyogQ2FtYmlhIGVsIGNvbG9yIGRlbCB0ZXh0byBhIG5lZ3JvICovXHJcbn1cclxuXHJcblxyXG4gIC5leGFtcGxlLWNvbnRhaW5lciB7XHJcbiAgICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gICAgaGVpZ2h0OiA0MDBweDtcclxuICAgIG92ZXJmbG93OiBhdXRvO1xyXG4gIH0iXX0= */"] });
 
 
 /***/ }),
@@ -4607,8 +4703,11 @@ class LanguageService {
                 conocimiento5: 'Vision Systems',
                 conocimiento6: 'Drives / Protections',
                 conocimiento7: 'Reading and Designing Electrical Drawings',
-                indicacion: 'Please fill out all required fields and generate the document, that document must be forwarded by mail to the human resources staff'
-                // Agrega más claves y valores según sea necesario para otros elementos de la interfaz de usuario en inglés
+                indicacion: 'This form will generate a PDF document, please send it to the human resources staff.',
+                selectnivel: 'Select language level',
+                basico: 'Basic',
+                intermedio: 'Intermediate',
+                avanzado: 'Advanced',
             },
             es: {
                 selectLanguage: 'Seleccionar idioma',
@@ -4682,8 +4781,11 @@ class LanguageService {
                 conocimiento5: 'Sistemas de vision',
                 conocimiento6: 'Accionamientos / Protecciones',
                 conocimiento7: 'Lectura y diseños de Planos Electricos',
-                indicacion: 'Por favor, llene todos los campos requeridos y genere el documento, ese documento debe reenviarlo por correo al personal de recursos humanos.'
-                // Agrega más claves y valores según sea necesario para otros elementos de la interfaz de usuario en español
+                indicacion: 'En este formulario se generara un documento en PDF, favor de enviarlo al personal de recursos humanos.',
+                selectnivel: 'Selecciona el nivel del idioma',
+                basico: 'Básico',
+                intermedio: 'Intermedio',
+                avanzado: 'Avanzado',
             }
             // Agrega más idiomas según sea necesario
         };
