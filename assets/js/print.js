@@ -337,7 +337,7 @@ export function printDiv2(nombre, apellido, nacionalidad,edad, ciudad, pais, est
 
 
       a.document.write('<div style="display: flex; margin-top: 10px;">');
-      a.document.write('<div style="flex: 10; font-family: \'Arial\'; font-size: 18px; max-width: 900px; word-wrap: break-word; overflow: hidden; text-align: justify;"><label>' + experiencia.descripcion + '</label></div>');
+      a.document.write('<div style="flex: 10; font-family: \'Arial\'; font-size: 18px; max-width: 980px; word-wrap: break-word; overflow: hidden; text-align: justify;"><label>' + experiencia.descripcion + '</label></div>');
       a.document.write("</div>");
       // =========== Logros ============
       // a.document.write('<div style="font-weight: bold; font-family: \'Arial\'; font-size: 18px; margin-bottom: 5px; margin-top: 10px;  color: #3D5FEA !important;"><label>'+languageTexts.logroet+':</label></div>');
