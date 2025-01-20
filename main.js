@@ -829,7 +829,10 @@ class ComentariosComponent {
             }
             // Obtener el archivo generado y descargarlo
             const docxContent = doc.getZip().generate({ type: 'blob' });
-            Object(file_saver__WEBPACK_IMPORTED_MODULE_4__["saveAs"])(docxContent, 'Curriculum_Vitae.docx');
+            const blob = new Blob([docxContent], {
+                type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            });
+            Object(file_saver__WEBPACK_IMPORTED_MODULE_4__["saveAs"])(blob, 'Curriculum_Vitae.docx');
         })
             .catch(error => {
             console.error('Error al cargar la plantilla DOCX:', error);
