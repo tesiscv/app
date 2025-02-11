@@ -243,7 +243,7 @@ class ExperienciaComponent {
                 fechaFin: this.fechaFin,
                 actividades: this.actividades,
                 funciones: this.funciones,
-                descripcion: this.descripcion
+                descripcion: this.descripcion = this.descripcion.replace(/\s+/g, ' ').trim()
             };
             this.dataSource.data.push(nuevaExperiencia);
             this.dataSource.data = [...this.dataSource.data];
